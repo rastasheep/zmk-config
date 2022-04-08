@@ -55,7 +55,7 @@
 			tapping-term-ms = <TAPPING_TERM>;
 			bindings = <&kp GRAVE>, <&kp LG(LC(Q))>, <&kp LG(LA(C_EJECT))>;
 		};
-	}
+	};
 
 	conditional_layers {
 		compatible = "zmk,conditional-layers";
