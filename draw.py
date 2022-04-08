@@ -28,6 +28,10 @@ STYLE = """
     .trans+text {
         opacity: 30%;
     }
+
+    .small+text {
+        font-size: 10px;
+    }
 """
 
 
@@ -36,6 +40,9 @@ def held(key):
 
 def trans(key):
     return {"key": key, "class": "trans"}
+
+def small(key):
+    return {"key": key, "class": "small"}
 
 KEYMAP = [
     {
@@ -46,7 +53,7 @@ KEYMAP = [
             ["shift", "z", "x", "c", "v", "b", "["],
         ],
         "right": [
-            ["", "6", "7", "8", "9", "0", "`"],
+            ["", "6", "7", "8", "9", "0", "`🔒"],
             ["", "y", "u", "i", "o", "p", "-"],
             ["", "h", "j", "k", "l", ";", "'"],
             ["]", "n", "m", ",", ".", "/", "shift"],
@@ -61,35 +68,53 @@ KEYMAP = [
             ["BT_CLR", "BT1", "BT2", "BT3", "BT4", "BT5"],
             ["f1", "f2", "f3", "f4", "f5", "f6"],
             ["`", "!", "@", "#", "$", "%"],
-            [trans("shift"), trans("z"), trans("x"), trans("c"), trans("v"), trans("b"), trans("[")],
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
         ],
         "right": [
-            ["", trans("6"), trans("7"), trans("8"), trans("9"), trans("0"), trans("`")],
+            ["", trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
             ["", "f7", "f8", "f9", "f10", "f11", "f12"],
             ["", "^", "&#38;", "*", "(", ")", "~"],
-            [trans("]"), trans("n"), "_", "+", "{", "}", "|"],
+            [trans(""), trans(""), "-", "+", "{", "}", "|"],
         ],
         "thumbs": {
-            "left": [trans("alt"), trans("gui"), held("lower"), trans("space")],
-            "right": [trans("enter"), trans("raise"), trans("bspc"), trans("gui")]
+            "left": [trans(""), trans(""), held("lower"), trans("space")],
+            "right": [trans("enter"), trans("raise"), trans(""), trans("")]
         },
     },
     {
         "left": [
-            [trans("esc"), trans("1"), trans("2"), trans("3"), trans("4"), trans("5")],
-            ["`", "1", "2", "3", "4", "5"],
-            ["f1", "f2", "f3", "f4", "f5", "f6"],
-            ["f7", "f8", "f9", "f10", "f11", "f12", "["],
+            [trans("esc"), trans(""), trans(""), trans(""), trans(""), trans("")],
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
         ],
         "right": [
-            ["", trans("6"), trans("7"), trans("8"), trans("9"), trans("0"), trans("`")],
-            ["", "6", "7", "8", "9", "0", trans("`")],
-            ["", trans("h"), "←", "↑", "↓", "→", trans("'")],
-            ["]", "+", "-", "=", "[", "]", "\\"],
+            ["", "⧉", trans(""), "⏯", "🔈", "🔊", trans("`🔒")],
+            ["", trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+            ["", "←", "↑", "↓", "→", trans(""), trans("")],
+            [trans(""), "+", "-", "=", "*", "\\", trans("")],
         ],
         "thumbs": {
-            "left": [trans("alt"), trans("gui"), trans("lower"), trans("space")],
-            "right": [trans("enter"), held("raise"), trans("bspc"), trans("gui")]
+            "left": [trans(""), trans(""), trans("lower"), trans("space")],
+            "right": [trans("enter"), held("raise"), trans(""), trans("")]
+        },
+    },
+    {
+        "left": [
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+        ],
+        "right": [
+            ["", trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+            ["", trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+            ["", small("alt_gui_←"), small("alt_gui_↑"), small("alt_gui_↓"), small("alt_gui_→"), trans(""), trans("")],
+            [trans(""), trans(""), trans(""), trans(""), trans(""), trans(""), trans("")],
+        ],
+        "thumbs": {
+            "left": [trans(""), trans(""), held("lower"), trans("space")],
+            "right": [trans("enter"), held("raise"), trans(""), trans("")]
         },
     },
 ]
