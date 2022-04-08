@@ -90,7 +90,7 @@
 
 		raise_layer {
 			bindings = <
-				&trans	&none	&none	&none	&none	&none					&none		&none		&td_media	VOLUME_DOWN		VOLUME_UP	&trans
+				&trans	&none	&none	&none	&none	&none					&kp LC(UP)	&none		&td_media	VOLUME_DOWN		VOLUME_UP	&trans
 				&none	&none	&none	&none	&none	&none					&none		&none		&none		&none			&none		&none
 				&none	&none	&none	&none	&none	&none					&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT		&none		&none
 				&none	&none	&none	&none	&none	&none	&none	&none	&kp PLUS	&kp MINUS	&kp EQUAL	&kp STAR		&kp BSLH	&none
