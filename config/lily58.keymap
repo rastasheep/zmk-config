@@ -104,7 +104,7 @@
 				&none	&none	&none	&none	&none	&none					&none				&none				&none				&none				&none	&none
 				&none	&none	&none	&none	&none	&none					&kp LA(LG(LEFT))	&kp LA(LG(DOWN))	&kp LA(LG(UP))		&kp LA(LG(RIGHT))	&none	&none
 				&none	&none	&none	&none	&none	&none	&none	&none	&none				&none				&none				&none				&none	&none
-										&none	&none	&trans	&trans	&trans	&trans				&none				&none
+										&none	&none	&none	&trans	&trans	&none				&none				&none
 			>;
 		};
 	};
