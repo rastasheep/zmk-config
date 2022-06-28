@@ -29,7 +29,7 @@
 / {
   behaviors {
     /*
-    * td_media mimics the behaviour of AirPods controls:
+    * td_media mimics the behavior of AirPods controls:
     *  - tap once for play / pause
     *  - tap twice for next track
     *  - tap three times for previous track
