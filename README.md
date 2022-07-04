@@ -10,7 +10,7 @@ Made with [Corne keyboard](https://github.com/foostan/crkbd) in mind, can work o
 | SHFT|  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  /  | SHFT|
                   | GUI | LWR | SPC |     | RET | RSE | BKSP|
 
-tab + q - esc combo
+ctl - mod tap, hold ctrl tap esc
 q + a - alt combo
 ```
 
