@@ -11,6 +11,7 @@ Made with [Corne keyboard](https://github.com/foostan/crkbd) in mind, can work o
                   | GUI | LWR | SPC |     | RET | RSE | BKSP|
 
 ctl - mod tap, hold ctrl tap esc
+spc - mod tap, hold hyper(shift + ctrl + alt + gui) tap spc
 q + a - alt combo
 ```
 
@@ -45,8 +46,8 @@ LOCK - tap once for lock, twice to sleep
 | SHFT|     |     |     |     |     |     |     |     |     |     |     | SHFT|
                   | GUI |✖LWR✖| SPC |     | RET |✖RSE✖| BKSP|
 
-←* - alt + cmd + left (Spectacle - left half)
-↓* - alt + cmd + down (Spectacle - bottom half)
-↑* - alt + cmd + up (Spectacle - top half)
-→* - alt + cmd + right (Spectacle - right half)
+←* - hyper + h (hammerspoon - window left half)
+↓* - hyper + j (hammerspoon - window bottom half)
+↑* - hyper + k (hammerspoon - window top half)
+→* - hyper + l (hammerspoon - window right half)
 ```
