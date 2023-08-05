@@ -33,7 +33,7 @@ q + a - alt combo
                   | GUI | LWR | SPC |     | RET |✖RSE✖| BKSP|
 
 ⧉ - ctrl + ↑ (Mac mission control)
-⧈ - ctrl + shift + cmd + 4 (Mac capture a portion of the screen)
+⧈ - ctrl + shift + gui + 4 (Mac capture a portion of the screen)
 PLAY - tap once for play / pause, twice for next track, three times for previous track
 VDWN - tap volume down, hold mute
 LOCK - tap once for lock, twice to sleep
