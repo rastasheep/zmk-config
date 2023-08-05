@@ -23,5 +23,5 @@ jobs:
         with:
           allowUpdates: true
           draft: false
-          artifacts: "build/artifacts/*"
+          artifacts: "build/artifacts/**/*"
           generateReleaseNotes: true
