@@ -22,7 +22,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          name: ${{ github.event }}
           draft: false
           artifacts: "build/artifacts/*"
           generateReleaseNotes: true
