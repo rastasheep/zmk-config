@@ -1,5 +1,27 @@
-on: [push, pull_request, workflow_dispatch]
+on: 
+  push:
+  workflow_dispatch:
+  release:
+    types: [published]
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  release:
+    if: github.event.release
+    needs: build
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          path: build/artifacts
+      - name: Update Release With Files
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          name: ${{ github.event }}
+          draft: false
+          artifacts: "build/artifacts/*"
+          generateReleaseNotes: true
