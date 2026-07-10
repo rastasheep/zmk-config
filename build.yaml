@@ -13,11 +13,11 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: lily58_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: lily58_right
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_right
