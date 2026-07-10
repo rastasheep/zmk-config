@@ -16,7 +16,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-#define HYP LS(LC(LA(LGUI)))
 #define PRSCR LS(LC(LG(N4)))
 
 // Friendlier volume definitions, tap volume down, hold mute
@@ -87,7 +86,7 @@
         &mt LALT TAB &kp Q &kp W &kp E    &kp R     &kp T             &kp Y   &kp U     &kp I     &kp O   &kp P    &kp MINUS
         &mt LCTL ESC &kp A &kp S &kp D    &kp F     &kp G             &kp H   &kp J     &kp K     &kp L   &kp SEMI &kp SQT
         &kp LSHFT    &kp Z &kp X &kp C    &kp V     &kp B             &kp N   &kp M     &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                                 &kp LGUI &mo LOWER &mt HYP SPACE     &kp RET &mo RAISE &kp BSPC
+                                 &kp LGUI &mo LOWER &mt CAPS SPACE    &kp RET &mo RAISE &kp BSPC
       >;
     };
 

@@ -11,7 +11,7 @@ Made with [Corne keyboard](https://github.com/foostan/crkbd) in mind, can work o
                   | GUI | LWR | SPC |     | RET | RSE | BKSP|
 
 ctl - mod tap, hold ctrl tap esc
-spc - mod tap, hold hyper(shift + ctrl + alt + gui) tap spc
+spc - mod tap, hold caps lock tap spc
 tab - mod tap, hold alt tap tab
 ```
 
